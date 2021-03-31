@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Future_Paid_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>Paid_Date__c  &gt;  TODAY()</errorConditionFormula>
+    <errorMessage>Pay date cannot be a date in the future</errorMessage>
+</ValidationRule>

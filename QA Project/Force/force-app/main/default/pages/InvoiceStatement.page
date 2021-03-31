@@ -1,0 +1,16 @@
+<apex:page standardController= "Invoice__c"  renderAs="pdf">
+<apex:pageBlock >
+<apex:pageBlockSection title="Expense Items">
+<apex:pageBlockTable value="{!inv}" var="e">
+<apex:column value="{!e.Data_of_expense__c}"/>
+<apex:column value="{!e.Invoice_Line_Item__c}"/>
+<apex:column value="{!e.Description__c}"/>
+<apex:column value="{!e.Mileage__c}"/>
+<apex:column value="{!e.Mileage_allowance__c}"/>
+<apex:column value="{!e.VAt__c}"/>
+<apex:column value="{!e.Amount__c}"/>
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock >
+</apex:page>
+
